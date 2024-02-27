@@ -2,12 +2,19 @@ class FtoC extends ConsoleProgram {
 
   /**
   * Description
-  * @author:
+  * @author:Anton Wong
   */
   
   public void run() {
     
-    // start coding here
+    double dblCels;
+    double dblFerenht;
+    
+    dblFerenht = readDouble("Enter the temperature in degrees Fahrenheit: ");
+
+    dblCels = 5.0/9.0 * (dblFerenht - 32);
+
+    System.out.println(dblFerenht+ " degrees Fahrenheit = " + dblCels + " degrees Celsius.");
     
   }
 }

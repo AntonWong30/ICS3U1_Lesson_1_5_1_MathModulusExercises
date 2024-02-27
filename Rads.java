@@ -2,12 +2,21 @@ class Rads extends ConsoleProgram {
 
   /**
   * Description
-  * @author:
+  * @author: Anton Wong
   */
   
   public void run() {
+    //get variables
+    double dblDegrees;
+    double dblRadians;
     
-    // start coding here
+    // Get the degrees 
+    dblDegrees = readDouble("Enter the angle in degrees: ");
+
+    // Convert to radians
+    dblRadians  = Math.toRadians(dblDegrees);
     
+    // Output
+    System.out.println(dblDegrees + " degrees = " + dblRadians + " radians");    
   }
 }
